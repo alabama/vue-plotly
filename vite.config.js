@@ -9,6 +9,10 @@ module.exports = defineConfig({
       "@": path.resolve(__dirname, "src/")
     }
   },
+  server: {
+    host: "www.pyoneer.test",
+    port: 3000
+  },
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.js"),
@@ -16,7 +20,6 @@ module.exports = defineConfig({
       formats: ["es", "cjs", "umd"],
       fileName: format => `vue-plotly.${format}.js`
     },
-
     emptyOutDir: true,
     outDir: path.resolve(__dirname, "dist"),
     assetsInlineLimit: 0,

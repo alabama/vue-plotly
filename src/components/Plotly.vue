@@ -9,7 +9,7 @@ import { camelize } from "@/utils/helper";
 
 const directives = {};
 if (typeof window !== "undefined") {
-  directives.resize = require("vue-resize-directive");
+  directives.resize = (() => import("vue-resize-directive"))();
 }
 export default {
   name: "plotly",

@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "private": false,
   "scripts": {
-    "serve": "vue-cli-service serve ./example/main.js --open",
+    "serve": "vite",
     "build": "vite build",
     "test:unit": "vue-cli-service test:unit --coverage",
     "lint": "vue-cli-service lint --fix",

@@ -18,20 +18,20 @@
 
           <div class="col descriptor">
             <span>Layout:</span>
-            <editor
+            <!-- editor
               class="layout"
               v-model="selected.data.layout"
               :show-btns="false"
-            />
+            / -->
           </div>
 
           <div class="col descriptor">
             <span>Data:</span>
-            <editor
+            <!--editor
               class="data"
               v-model="selected.data.data"
               :show-btns="false"
-            />
+            /-->
           </div>
         </div>
 
@@ -54,7 +54,8 @@
   </div>
 </template>
 <script>
-import editor from "vue-json-editor";
+// that import is not build properly... so we don't use it
+// import editor from "vue-json-editor";
 import simple from "./simple.js";
 import contour from "./contour.js";
 import histogram from "./histogram.js";
@@ -64,7 +65,7 @@ import pie from "./pie.js";
 export default {
   name: "picker",
   components: {
-    editor
+    // editor
   },
   data() {
     return {
