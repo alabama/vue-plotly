@@ -3,13 +3,14 @@
 </template>
 <script>
 import Plotly from "plotly.js-dist-min";
+import resize from "vue-resize-directive";
 import events from "./events.js";
 import methods from "./methods.js";
 import { camelize } from "@/utils/helper";
 
 const directives = {};
 if (typeof window !== "undefined") {
-  directives.resize = (() => import("vue-resize-directive"))();
+  directives.resize = resize;
 }
 export default {
   name: "plotly",
